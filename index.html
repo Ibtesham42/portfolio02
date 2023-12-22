@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1821534ffd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ibtlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Ibtesham Akhtar</span>  <br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .................................................About................................ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <!-- column 1 -->
+                <div class="about-col-1">
+                    <img src="images/IbtUser.png">
+
+                </div>
+
+                <!-- !-- column 2--> 
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                   <p>As a frontend web developer, pursuing BCA from USTM, Meghalaya, I'm passionate about
+                     crafting engaging and user-centric digital experiences. I thrive on translating creative
+                      ideas into functional, visually appealing websites and applications.
+                       Proficient in HTML, CSS, and JavaScript, 
+                       I specialize in building responsive and interactive interfaces that resonate with users. 
+                    I'm eager to explore new technologies and frameworks to enhance my skills further</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+
+
+
+                    <!-- .............................Skills................................. -->
+
+                    <div class="tab-contens active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web App Developent</li>
+                            <li><span>App Developent</span><br>Building Android/ios App</li>
+    
+                        </ul>
+
+
+                    </div>
+
+                    <!-- ...................................Experience................................ -->
+                    <div class="tab-contens" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Frontend Developer at <a href="https://flerid.com/">Flerid</a> </li>
+                            <li><span>2023 - 2024</span><br>Team Lead at Flerid</li>
+                            <li><span>2023 - 2024</span><br>UI/UX Design at Flerid</li>
+                            
+    
+                        </ul>
+
+
+                    </div>
+                     
+                    <!-- .............................Education.................... -->
+                    <div class="tab-contens" id="education">
+                        <ul>
+                            <li><span>2024</span><br>BCA From USTM Meghalaya</li>
+                            <li><span>2023 - 2024</span><br>Intership at Assam Technology</li>
+                            
+                            
+    
+                        </ul>
+
+
+                    </div>
+                    
+                   
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ...............................................Services.................................................... -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    
+                    <i class="fa-brands fa-webflow"></i>
+                    <h2>Web Developent</h2>
+                    <p> </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Software Developent</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Developent</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..............................Portfolio............................ -->
+
+    <!-- <div id="portfolio">
+        <div class="container">
+
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ibtlogo.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>sfs fs df sdf sdf s fsd fsd fsd fs df </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/background.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>sfs fs df sdf sdf s fsd fsd fsd fs df </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/background.png">
+                    <div class="layer">
+                        
+                        <h3>Social Media</h3>
+                        <p>sfs fs df sdf sdf s fsd fsd fsd fs df </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div> -->
+
+    <!-- .......................Contact.............................. -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ibteshamakhtar1@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8638278249</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8974847741</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/ibteshamakhtar?igsh=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href=" https://www.linkedin.com/in/ibtesham-akhtar-4474a6194"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+
+                   
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p><i class="fa-solid fa-copyright"></i>Copyright © Ibt </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
