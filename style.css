@@ -435,3 +435,75 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+/* Styling for the button */
+/* Styling for the button */
+.floating-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #4CAF50; /* A friendly green color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensure the sprinkle effect stays within the button */
+}
+
+/* Hover effect with color change and sprinkle */
+.floating-btn:hover {
+    transform: translateY(-10px);
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Keyframe for the slight movement */
+@keyframes floating {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(10px) translateY(-5px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.floating-btn {
+    animation: floating 3s ease-in-out infinite; /* Continuous floating effect */
+}
+
+/* Sprinkle effect on hover */
+.floating-btn:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: sprinkle 0.6s ease-out infinite;
+    pointer-events: none;
+}
+
+/* Keyframe for the sprinkle effect */
+@keyframes sprinkle {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
+
+
